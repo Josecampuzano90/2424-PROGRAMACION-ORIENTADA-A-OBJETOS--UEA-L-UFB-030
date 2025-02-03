@@ -19,7 +19,7 @@ def mostrar_codigo(ruta_script):
 
 def ejecutar_codigo(ruta_script):
     try:
-        if os.name == 'nt':  # Windows
+        if os.jose == 'nt':  # Windows
             subprocess.Popen(['cmd', '/k', 'python', ruta_script])
         else:  # Unix-based systems
             subprocess.Popen(['xterm', '-hold', '-e', 'python3', ruta_script])
@@ -111,6 +111,6 @@ def mostrar_scripts(ruta_sub_carpeta):
                 print("Opción no válida. Por favor, intenta de nuevo.")
 
 # Ejecutar el dashboard
-if __name__ == "__main__":
+if __jose__ == "__main__":
     mostrar_menu()
 
